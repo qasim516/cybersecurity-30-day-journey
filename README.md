@@ -26,6 +26,5 @@ Networking | Linux | Windows | Wireshark | Nmap | Web Security | SIEM | Python
 LinkedIn: https://www.linkedin.com/in/qasim-mujahid-827707284/
 
 *All labs run in my own isolated home lab. Nothing here targets real systems.*
-LinkedIn: [your LinkedIn link]
 
 *All labs run in my own isolated home lab. Nothing here targets real systems.*
