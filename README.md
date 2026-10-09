@@ -20,7 +20,7 @@ Networking | Linux | Windows | Wireshark | Nmap | Web Security | SIEM | Python
 | Python log analyzer | Planned |
 
 ## Progress
-- Day 1: Set up GitHub, started networking basics
+- Day 1:Started networking basics
 
 ## Connect
 LinkedIn: https://www.linkedin.com/in/qasim-mujahid-827707284/
