@@ -21,6 +21,7 @@ Networking | Linux | Windows | Wireshark | Nmap | Web Security | SIEM | Python
 
 ## Progress
 - Day 1:Learned IP address, router, MAC address, and ports.
+- Day 2: Learned DNS, TCP vs UDP and commands 
 
 ## Connect
 LinkedIn: https://www.linkedin.com/in/qasim-mujahid-827707284/
