@@ -23,6 +23,7 @@ Networking | Linux | Windows | Wireshark | Nmap | Web Security | SIEM | Python
 - Day 1:Learned IP address, router, MAC address, and ports.
 - Day 2: Learned DNS, TCP vs UDP and commands
 - Day 3: Completed TryHackMe rooms (Networking, DNS, HTTP) and learned the OSI model
+- Day 4: Studied the OSI model from a SOC analyst's view and TCP flags, installed Wireshark and practiced capture filters
 
 ## Connect
 LinkedIn: https://www.linkedin.com/in/qasim-mujahid-827707284/
