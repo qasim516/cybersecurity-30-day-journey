@@ -28,11 +28,11 @@ The file has 1,262 packets, so reading every packet one by one made no sense. In
 | Protocols | TCP 89.3%, DNS over UDP 5.4%, ICMP 2.8%, ARP 2.5% |
 | Most active pair | 192.168.56.99 and 192.168.56.20 (859 packets, about 68% of everything) |
 
-![Capture properties](screenshots/01-capture-properties.png)
+![Capture properties](Screenshots/01-capture-properties.png)
 
-![Protocol hierarchy](screenshots/02-protocol-hierarchy.png)
+![Protocol hierarchy](Screenshots/02-protocol-hierarchy.png)
 
-![Conversations](screenshots/03-conversations.png)
+![Conversations](Screenshots/03-conversations.png)
 
 What stood out first from the protocol hierarchy:
 
@@ -64,7 +64,7 @@ What stood out first from the protocol hierarchy:
 - **ATT&CK:** T1018 Remote System Discovery
 - **What I would do:** find out if 192.168.56.99 is an approved scanner. If not, isolate it.
 
-![Ping sweep](screenshots/04-ping-sweep.png)
+![Ping sweep](Screenshots/04-ping-sweep.png)
 
 ### 2. Port scan
 
@@ -76,7 +76,7 @@ What stood out first from the protocol hierarchy:
 - **ATT&CK:** T1046 Network Service Discovery
 - **What I would do:** block or isolate the source and check what it did to the open ports next.
 
-![Port scan](screenshots/05-port-scan.png)
+![Port scan](Screenshots/05-port-scan.png)
 
 ### 3. SSH brute force
 
@@ -88,7 +88,7 @@ What stood out first from the protocol hierarchy:
 - **ATT&CK:** T1110 Brute Force
 - **What I would do:** check the server's login logs, reset the password, block the source, and treat the server as possibly compromised.
 
-![SSH brute force](screenshots/06-ssh-brute-force.png)
+![SSH brute force](Screenshots/06-ssh-brute-force.png)
 
 ### 4. Password sent in plain text
 
@@ -100,7 +100,7 @@ What stood out first from the protocol hierarchy:
 - **ATT&CK:** T1040 Network Sniffing
 - **What I would do:** move the login to HTTPS, change that password and invalidate the session.
 
-![Cleartext password](screenshots/07-cleartext-password.png)
+![Cleartext password](Screenshots/07-cleartext-password.png)
 
 ### 5. ARP spoofing
 
@@ -112,7 +112,7 @@ What stood out first from the protocol hierarchy:
 - **ATT&CK:** T1557.002 ARP Cache Poisoning
 - **What I would do:** isolate the attacking host and turn on dynamic ARP inspection on the switch.
 
-![ARP spoofing](screenshots/08-arp-spoofing.png)
+![ARP spoofing](Screenshots/08-arp-spoofing.png)
 
 ### 6. DNS tunneling
 
@@ -124,7 +124,7 @@ What stood out first from the protocol hierarchy:
 - **ATT&CK:** T1071.004 Application Layer Protocol: DNS
 - **What I would do:** block the domain, isolate the workstation and look for what data left through DNS.
 
-![DNS tunneling](screenshots/09-dns-tunneling.png)
+![DNS tunneling](Screenshots/09-dns-tunneling.png)
 
 ### 7. Beaconing to a suspicious server
 
@@ -136,7 +136,7 @@ What stood out first from the protocol hierarchy:
 - **ATT&CK:** T1095 Non-Application Layer Protocol
 - **What I would do:** block 203.0.113.77, isolate the workstation and start an incident investigation.
 
-![Beaconing](screenshots/10-beaconing.png)
+![Beaconing](Screenshots/10-beaconing.png)
 
 ## Making sure I did not miss anything
 
@@ -159,11 +159,11 @@ To check the normal traffic I used a filter that hides everything I had already 
 
 What remained was ordinary HTTPS to 203.0.113.50 and the HTTP login. The HTTPS connections look like textbook TCP: SYN, SYN-ACK, ACK, then data with PSH-ACK, then FIN-ACK to close. That is a useful comparison, because the scan and brute force packets did not follow this pattern.
 
-![Leftover traffic](screenshots/12-leftover-traffic.png)
+![Leftover traffic](Screenshots/12-leftover-traffic.png)
 
 I also checked Expert Information. The warnings matched what I found: a duplicate IP address for the gateway, and a large number of resets (167 in total, mostly from the scan and the SSH attempts).
 
-![Expert information](screenshots/11-expert-information.png)
+![Expert information](Screenshots/11-expert-information.png)
 
 ## Timeline
 
