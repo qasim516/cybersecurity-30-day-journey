@@ -159,11 +159,7 @@ To check the normal traffic I used a filter that hides everything I had already 
 
 What remained was ordinary HTTPS to 203.0.113.50 and the HTTP login. The HTTPS connections look like textbook TCP: SYN, SYN-ACK, ACK, then data with PSH-ACK, then FIN-ACK to close. That is a useful comparison, because the scan and brute force packets did not follow this pattern.
 
-![Leftover traffic](Screenshots/12-leftover-traffic.png)
-
-I also checked Expert Information. The warnings matched what I found: a duplicate IP address for the gateway, and a large number of resets (167 in total, mostly from the scan and the SSH attempts).
-
-![Expert information](Screenshots/11-expert-information.png)
+![Leftover traffic](Screenshots/11-leftover-traffic.png)
 
 ## Timeline
 
