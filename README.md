@@ -1,33 +1,27 @@
-# Cybersecurity 30-Day Journey
+# Cybersecurity 30-Day Journey | SOC Analyst Track
 
 Hi, I'm **Qasim Mujahid**, a final-year BS Computer Science student.
-I am learning cybersecurity in public with the goal of becoming a **SOC Analyst**.
+Learning cybersecurity in public to become a **SOC Analyst (L1)**.
 
-This repo holds my notes, labs, scripts, and projects from a 30-day learning plan.
+> All labs run in my own isolated home lab. Nothing here targets real systems.
 
-## Certificates
-- Cisco Networking Academy: Introduction to Cybersecurity (completed)
+### Certificates
+- Cisco Networking Academy: Introduction to Cybersecurity (Completed)
 
-## Skills I am building
-Networking | Linux | Windows | Wireshark | Nmap | Web Security | SIEM | Python
+### Skills
+Networking | Linux | Wireshark | Nmap | Web Security | SIEM | Python
 
-## Projects
-| Project | Status |
-|---|---|
-| Vulnerability assessment report | Planned |
-| Web app security report | Planned |
-| Mini SOC lab (attack and detection) | Planned |
-| Python log analyzer | Planned |
+### Progress (Day 1 - 30)
 
-## Progress
-- Day 1:Learned IP address, router, MAC address, and ports.
-- Day 2: Learned DNS, TCP vs UDP and commands
-- Day 3: Completed TryHackMe rooms (Networking, DNS, HTTP) and learned the OSI model
-- Day 4: Studied the OSI model from a SOC analyst's view and TCP flags, installed Wireshark and practiced capture filters
+| Day | Folder | What I Learned |
+| :--- | :--- | :--- |
+| 01 | `Day-01-Intro-to-Networking` | IP, Router, MAC, Ports |
+| 02 | `Day-02-DNS-TCP-vs-UDP` | DNS, TCP vs UDP, Commands |
+| 03 | `Day-03-TryHackMe-Networking` | TryHackMe Rooms, OSI Model |
+| 04 | `Day-04-OSI-SOC-TCP-Flags` | OSI SOC View, TCP Flags, Wireshark Filters |
+| 05 | `Day-05-SMTP-Analysis` | SMTP AUTH LOGIN, Base64 creds, User Enum (with pcap & evidence) |
 
-## Connect
+> **Note:** Day 01-04 are my theory `notes.md`, Day 05 onwards are practical analysis reports with pcap + screenshots.
+
+### Connect
 LinkedIn: https://www.linkedin.com/in/qasim-mujahid-827707284/
-
-*All labs run in my own isolated home lab. Nothing here targets real systems.*
-
-*All labs run in my own isolated home lab. Nothing here targets real systems.*
