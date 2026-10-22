@@ -43,5 +43,5 @@ Alert is an automatic rule in SIEM (Splunk/Wazuh). We write a rule once, then SI
 4. Block IP doing enumeration
 
 ## Evidence
-- Add screenshot of Wireshark showing AUTH LOGIN
-- Add screenshot of Base64 decoded password
+This screenshot shows AUTH LOGIN and user enumeration:
+![Evidence](./smtp-evidence.png)
