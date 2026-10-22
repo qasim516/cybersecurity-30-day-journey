@@ -1,7 +1,7 @@
 # Day 05 - SMTP Analysis: Cleartext Credentials & User Enumeration
 
 **Analyst:** Qasim516
-**Date:** 22 Oct 2026
+**Date:** 19 Oct 2026
 **File:** smtp.pcap
 **Tools:** Wireshark, Base64 Decoder
 
